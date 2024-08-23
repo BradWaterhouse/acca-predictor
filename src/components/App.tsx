@@ -16,8 +16,6 @@ function App() {
   const [generating, setGenerating] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
 
-  console.log(process.env.REACT_APP_CHAT_GPT_API_KEY);
-
   const fetchChatGtpResponse = () => {
     setGenerating(true);
     setError(false);
@@ -36,7 +34,7 @@ function App() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.CHAT_GPT_API_KEY}`
+        Authorization: `Bearer ${process.env.REACT_APP_CHAT_GPT_API_KEY}`
       },
       body: JSON.stringify({
         model: "gpt-4o-mini",
