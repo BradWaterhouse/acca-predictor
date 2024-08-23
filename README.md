@@ -9,6 +9,10 @@ Football Fixture Risk Predictor is a React application that uses ChatGPT’s API
 - **User-Friendly Interface:** Easy-to-use interface designed for both football enthusiasts and analysts to access predictions and insights quickly.
 - **Powered by ChatGPT:** Utilises the power of ChatGPT’s API to deliver accurate and insightful predictions.
 
+## Screenshot
+
+![Football Fixture Risk Predictor Screenshot](public/app-screenshot.png)
+
 ## Getting Started
 
 ### Prerequisites
@@ -43,3 +47,4 @@ Create a `.env` file in the root directory of your project to store your environ
 
 ```plaintext
 REACT_APP_CHATGPT_API_KEY=your_chatgpt_api_key
+REACT_APP_API_URL=https://api.example.com
